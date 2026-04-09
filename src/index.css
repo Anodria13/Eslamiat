@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-quran: "Amiri", serif;
+  
+  --animate-marquee-rtl: marquee-rtl 15s linear infinite;
+  --animate-marquee-ltr: marquee-ltr 15s linear infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes marquee-rtl {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes marquee-ltr {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes glow {
+  0% { filter: drop-shadow(0 0 2px rgba(52, 211, 153, 0.4)); transform: scale(0.95); opacity: 0.8; }
+  100% { filter: drop-shadow(0 0 12px rgba(52, 211, 153, 1)); transform: scale(1.1); opacity: 1; }
+}
+
+.mask-image-linear-gradient {
+  mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+}

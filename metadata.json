@@ -1,0 +1,7 @@
+{
+  "name": "Islamic Dashboard app",
+  "description": "A comprehensive Islamic dashboard providing prayer times, Quran, Azkar, Hadith, and Radio using various APIs.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
